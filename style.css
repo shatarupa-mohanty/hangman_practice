@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0C359E;
+}
+
+.container {
+    max-width: 800px;
+    /* height: 500px; */
+    background-color: #EE99C2;
+    display: flex;
+    gap: 1.3rem;
+    padding: 60px 40px;
+}
+
+.hangman_state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.hangman_state img {
+    max-width: 270px;
+}
+
+.hangman_game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    text-align: center;
+}
+
+.hangman_game ul li {
+
+    width: 30px;
+    border-bottom: 3px solid black;
+}
+
+.incorrect {
+    margin-top: 30px;
+}
+
+.keyboard {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.keyboard button {
+    width: calc(100% / 9 - 5px);
+    padding: 5px;
+    font-size: 1.1rem;
+    background-color: #FFE3CA;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width:750px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1.3rem;
+    }
+
+    h2 {
+        display: none;
+    }
+}
