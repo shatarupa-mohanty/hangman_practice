@@ -9,27 +9,37 @@
 </head>
 
 <body>
+    <div class="results">
+        <div class="report_card">
+            <img src="images/lost.gif" alt="lost">
+            <h3 class="card_head">Game Over</h3>
+            <p class="answer">The correct answer was:<b>NGUAGE</b></p>
+            <button class="play_again">Play Again</button>
+        </div>
+    </div>
     <div class="container">
         <div class="hangman_state">
             <img src="images/hangman-0.svg" alt="hangman">
             <h2>HANGMAN GAME</h2>
         </div>
         <div class="hangman_game">
-            <ul>
+            <ul class="word">
+                <!-- <li class="letter"></li>
                 <li class="letter"></li>
                 <li class="letter"></li>
                 <li class="letter"></li>
                 <li class="letter"></li>
-                <li class="letter"></li>
-                <li class="letter"></li>
+                <li class="letter"></li> -->
             </ul>
-            <p class="hint">Hint: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, voluptate.</p>
-            <p class="incorrect">Incorrect guesses: 0/6</p>
+            <p class="hint">Hint: <b>ipsum dolor sit amet consectetur adipisicing elit. Deserunt, voluptate.</b></p>
+            <p class="incorrect">Incorrect guesses:<b>0/6</b></p>
             <div class="keyboard">
-                <button>A</button><button>B</button><button>C</button><button>D</button><button>E</button><button>F</button><button>G</button><button>H</button><button>I</button><button>J</button><button>K</button><button>L</button><button>M</button><button>N</button><button>O</button><button>P</button><button>Q</button><button>R</button><button>S</button><button>T</button><button>U</button><button>V</button><button>W</button><button>X</button><button>Y</button><button>Z</button>
+                <!-- <button>A</button><button>B</button><button>C</button><button>D</button><button>E</button><button>F</button><button>G</button><button>H</button><button>I</button><button>J</button><button>K</button><button>L</button><button>M</button><button>N</button><button>O</button><button>P</button><button>Q</button><button>R</button><button>S</button><button>T</button><button>U</button><button>V</button><button>W</button><button>X</button><button>Y</button><button>Z</button> -->
             </div>
         </div>
     </div>
+    <script src="scripts/words.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
